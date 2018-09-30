@@ -1,0 +1,39 @@
+html {
+    font-size: 16px;
+}
+
+#px {
+    width: 300px;
+    height: 250px;
+    background-color: red;
+}
+
+#pt {
+    width: 72pt;
+    height: 144pt;
+    background-color: green;
+}
+
+#box {
+    width: 500px;
+    height: 400px;
+    background-color: blue;
+}
+
+#child {
+    width: 50%;
+    height: 50%;
+    background-color:violet;
+}
+
+#em {
+    font-size: 16px;
+    width: 8em;
+    background-color: yellow;
+}
+
+#child-em {
+    width: 4em;
+    height: 4rem;
+    background-color:yellowgreen;
+}

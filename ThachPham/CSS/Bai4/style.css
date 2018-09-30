@@ -1,0 +1,27 @@
+/*Chọn theo tên thẻ*/
+h1 {
+    font-weight: bold;
+    color: black;
+}
+
+/*Chọn phần tử chỉ định theo id*/
+#tieude {
+    color: red;
+}
+
+/*Class*/
+.tieu-de {
+    color: green;
+}
+
+/*Vùng chọn thứ cấp*/
+#menu ul li {
+    background: red;
+    color: white;
+}
+
+/*Thứ cấp lồng nhau - sau 1 bậc*/
+#menu ul ul > p {
+    background: green;
+    color: white;
+}
