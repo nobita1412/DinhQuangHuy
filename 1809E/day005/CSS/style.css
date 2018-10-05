@@ -1,0 +1,12 @@
+.city {
+    background: yellow;
+    color: white;
+}
+
+#city-hue {
+    color: black;
+}
+
+.location {
+    text-transform: uppercase;
+}

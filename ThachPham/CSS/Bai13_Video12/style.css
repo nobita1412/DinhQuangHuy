@@ -1,0 +1,10 @@
+div {
+    background-color: #e8e8e8;
+    background-image: url("#"), url("#");
+    width: 1200px;
+    height: 500px;
+    padding: 55px;
+    background-repeat: no-repeat; /*repeat round repeat-x repeat-y space*/
+    backdround-position: bottom left, top right;
+    background-size: 100px, 400px;
+}

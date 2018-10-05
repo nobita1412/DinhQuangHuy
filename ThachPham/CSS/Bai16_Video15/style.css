@@ -1,0 +1,13 @@
+ul {
+    background: red;
+    padding: 0;
+    margin-left: 32px;
+    width: 250px;
+}
+
+li {
+    list-style-type: none; /*disc circle square decimal lower-roman upper-roman*/
+    list-style-position: inside; /*outside*/
+    list-style-image: url("#");
+    list-style: square outside;
+}
