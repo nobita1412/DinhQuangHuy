@@ -1,0 +1,14 @@
+#box {
+    width: 150pc;
+    height: 200px;
+    background: blue;
+    /*[attribute] [time] [delay] [style transition]*/
+    transition: all 1s 0.2s;
+    -moz-transition: all 1s 0.2s ease-out;
+    -webkit-transition: all 1s 0.2s ease-out;
+}
+
+#box:hover {
+    background: red;
+    margin-left: 250px;
+}

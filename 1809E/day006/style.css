@@ -1,0 +1,46 @@
+.border-dashed {
+    border: 3px dashed red;
+    margin: 30px 20px 40px 20px;
+}
+.border-dotted {
+    border: 3px dotted red;
+    padding: 20px 10px 50px 30px;
+    background: #555555;
+}
+.border-double {
+    border: 3px double red;
+    background: white;
+    outline: 5px solid blue;
+}
+.border-groove {
+    border: 3px groove red;
+    background: url("../../images/clover.jpg") left bottom no-repeat;
+}
+.border-hidden {
+    border: 3px hidden red;
+}
+.border-none {
+    border: 3px none red;
+}
+.border-ridge {
+    border: 3px ridge red;
+}
+.border-inset {
+    border: 3px inset red;
+}
+.border-outset {
+    border: 3px outset red;
+}
+
+#pokemon {
+    width: 300px;
+    height: 100px;
+    background: yellowgreen;
+}
+
+#maxmin {
+    background: tomato;
+    max-width: 400px;
+    max-height: 500px;
+    font-weight: bold;
+}

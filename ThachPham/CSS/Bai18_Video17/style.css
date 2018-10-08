@@ -1,0 +1,29 @@
+/*.img {
+    positon: relative;
+    top: 55px;
+    left: 35px;
+}*/
+
+.relative {
+    background-color: tomato;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.img {
+    positon: absolute;
+    top: 55px;
+    left: 35px;
+    z-index: 30;
+}
+
+#fixed {
+    positon: fixed;
+    top: 55px;
+    left: 35px;
+}
+
+p {
+    z-index: 20;
+}
+
