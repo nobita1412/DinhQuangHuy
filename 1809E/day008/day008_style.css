@@ -1,0 +1,25 @@
+.absolute {
+    background: tomato;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+}
+
+.relative {
+    position: relative;
+    margin: 200px 100px;
+    width: 400px;
+    height: 400px;
+    background: #4caf50;
+}
+
+.relative .absolute-child {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background: yellowgreen;
+}

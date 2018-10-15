@@ -1,0 +1,19 @@
+.wrapper {
+    height: 700px;
+    width: 100%;
+    background: forestgreen;
+}
+
+.wrapper .col-1 {
+    background: violet;
+    height: 300px;
+    width: 200px;
+    float: right;
+}
+
+.wrapper .col-2 {
+    width: 500px;
+    height: 300px;
+    background: tomato;
+    clear: right;
+}
