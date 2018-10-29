@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        //$(document).ready(); - gọi phương thức
+        //$ bộ chọn
+        //document - toàn bộ tài liệu html
+        //$('p') - chọn thẻ p
+        //$('a#id') - chọn thẻ a có id là id
+        //$('a.id') - chọn thẻ a có class là id
+        //$('div.abc a.href
+        //callback - sau khi chạy xong $(document).ready(); thì mới gọi đến function để chạy
+        $(document).ready(function(){
+            $("button#an").click(function(){
+                $("p").hide();
+                $("p#nguoc1").show();
+                $("p#nguoc2").hide();
+            });
+            $("button#hien").click(function(){
+                $("p").show();
+                $("p#nguoc2").show();
+                $("p#nguoc1").hide();
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #an, #hien {
+            border: 1px solid #8d8d8d;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+        #an {
+            background-color: tomato;
+        }
+        #hien {
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <button id="an">Ẩn</button>
+    <button id="hien">Hiện</button>
+    <p>Paragraph!</p>
+    <p id="nguoc1">Cat!</p>
+    <p id="nguoc2">Dog!</p>
+</body>
+</html>
