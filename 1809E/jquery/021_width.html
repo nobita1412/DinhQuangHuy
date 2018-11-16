@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a#clickme').on('click',function(e){
+                e.preventDefault();
+                var wid = $('div#target').width();
+                alert(wid);
+                $('div#target').width(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="target" style="background: red;">The div</div>
+    <a href="#" id="clickme">Click</a>
+</body>
+</html>

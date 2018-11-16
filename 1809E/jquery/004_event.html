@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a#click').on('click',function(e){
+                e.preventDefault();
+                alert('Ban da click chuot');
+            });
+
+            $('a#dbclick').on('click',function(e){
+                e.preventDefault();
+            });
+
+            $('a#dbclick').on('dblclick',function(e){
+                e.preventDefault();
+                alert('Ban da nhay dup chuot');
+            })
+
+            $('.thep').on('mouseenter',function(){
+                $(this).css({color:'red'});
+            });
+
+            $('.thep').on('mouseleave',function(){
+                $(this).css({color:'black'});
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><a id="click" href="#" target="_blank">Click me</a></p>
+    <p><a id="dbclick" href="#" target="_blank">Double-click me</a></p>
+    <p class="thep">p1</p>
+    <p class="thep">p2</p>
+    <p class="thep">p3</p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a#click1').on('click',function(e){
+                e.preventDefault();
+                $('a.menu-nav').parent().css("border","1px solid red");
+            });
+            $('a#click2').on('click',function(e){
+                e.preventDefault();
+                $('a.menu-nav').parents("ul").css("border","1px solid green");
+            });
+            $('a#click3').on('click',function(e){
+                e.preventDefault();
+                $('a.menu-nav').parents().css("border","1px solid violet");
+            });
+            $('a#click4').on('click',function(e){
+                e.preventDefault();
+                $('a.menu-nav').parentsUntil("div.row").css("border","1px solid blue");
+            });
+            $('a#click5').on('click',function(e){
+                e.preventDefault();
+                // $('a.menu-nav').parents("div.col-sm-3").siblings().css("border","1px solid pink");
+                $("div#a").siblings().css("border","1px solid pink");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <a href="#" id="click1">Click 1</a>
+    <a href="#" id="click2">Click 2</a>
+    <a href="#" id="click3">Click 3</a>
+    <a href="#" id="click4">Click 4</a>
+    <a href="#" id="click5">Click 5</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">1
+                <nav>
+                    <ul>
+                        <li><a href="#">Level 1</a>
+                            <ul>
+                                <li><a href="#" class="menu-nav">Menu 1</a></li>
+                                <li><a href="#" class="menu-nav">Menu 2</a></li>
+                                <li><a href="#" class="menu-nav">Menu 3</a></li>
+                                <li><a href="#" class="menu-nav">Menu 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-3">2</div>
+            <div class="col-sm-6" id="a">3</div>
+            <div class="col-sm-3">4</div>
+        </div>
+    </div>
+</body>
+</html>

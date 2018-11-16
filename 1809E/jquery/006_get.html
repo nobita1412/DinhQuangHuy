@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#div').on('click',function(e){
+                e.preventDefault();
+                var html = $('div').html();
+                console.log(html);
+            });
+            $('#p').on('click',function(e){
+                e.preventDefault();
+                var text = $('#p1').text();
+                console.log(text);
+            });
+            $('#username').on('click',function(e){
+                e.preventDefault();
+                var val = $('input[name="username"]').val();
+                console.log(val);
+            });
+            $('#content').on('click',function(e){
+                e.preventDefault();
+                var val = $('textarea').val();
+                console.log(val);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">Noi dung the p</p><a href="#" id="p">Lay noi dung</a>
+    <div>
+        <a href="#">The a</a>
+        Noi dung div
+    </div><a href="#" id="div">Lay noi dung</a>
+    <form action="" method="post">
+        <p><input name="username" type="text" value=""><a href="#" id="username">Lay noi dung</a></p>
+        <p><textarea name="content"></textarea><a href="#" id="content">Lay noi dung</a></p>
+    </form>
+</body>
+</html>

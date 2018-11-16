@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn1").on('click',function(){
+                alert("Text: "+$('#test').text());
+            });
+            $("#btn2").on('click',function(){
+                alert("HTML: "+$('#test').html());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+</body>
+</html>
